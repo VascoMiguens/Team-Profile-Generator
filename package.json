@@ -1,0 +1,24 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VascoMiguens/Team-Profile-Generator.git"
+  },
+  "author": "Vasco Miguens",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VascoMiguens/Team-Profile-Generator/issues"
+  },
+  "homepage": "https://github.com/VascoMiguens/Team-Profile-Generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4",
+    "jest": "^29.3.1"
+  }
+}
