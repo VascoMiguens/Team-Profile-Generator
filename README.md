@@ -29,8 +29,11 @@ This is the tenth project of a bootcamp where studentes had to implement:
 * Install all dependencies with "npm install"
 
 ## Usage 
- The following video demonstrates how to use the application, click on the gif to view it on Youtube: 
- [![til](https://github.com/VascoMiguens/Team-Profile-Generator/blob/main/assets/gif/team_profile_generator.gif)](https://youtu.be/I0ftkBykpac)
+ The following video demonstrates how to use the application
+ ![til](https://github.com/VascoMiguens/Team-Profile-Generator/blob/main/assets/gif/team_profile_generator.gif)
+ 
+ Click on the following link to watch the video: 
+   * https://youtu.be/I0ftkBykpac
 ## Contributing
 Please feel free to submit pull requests or open issues to improve this applcation
 ## Tests
