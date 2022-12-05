@@ -2,7 +2,7 @@
 
 ## Table of Contents
 * [Description](#description)
- *[Installation](#installation)
+* [Installation](#installation)
 * [Usage](#usage)
 * [Contributing](#contributing)
 * [Tests](#tests)
@@ -29,7 +29,7 @@ This is the tenth project of a bootcamp where studentes had to implement:
 
 ## Usage 
  The following video demonstrates how to use the application, click on the gif to view it on Youtube: 
- ![til](https://github.com/VascoMiguens/Team-Profile-Generator/blob/main/utils/dist/team_profile_generator.gif)
+ [![til](https://github.com/VascoMiguens/Team-Profile-Generator/blob/main/assets/gif/team_profile_generator.gif)](https://youtu.be/I0ftkBykpac)
 ## Contributing
 Please feel free to submit pull requests or open issues to improve this applcation
 ## Tests
@@ -42,5 +42,5 @@ Please feel free to chose the different options in the application to test it.
 
 ## Questions
 Any questions about this project refer to:
-  * [Github](VascoMiguens(https://github.com/VascoMiguens))
+  * [Github](https://github.com/VascoMiguens)
   * Email: v_miguens@hotmail.com
