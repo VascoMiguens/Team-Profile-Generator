@@ -1,6 +1,7 @@
 const inquirer = require("inquirer");
 const questions = require("./questions");
 
+//Call constructor classes
 const Manager = require("../lib/Manager");
 const Engineer = require("../lib/Engineer");
 const Intern = require("../lib/Intern");

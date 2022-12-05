@@ -1,3 +1,4 @@
+//Confirm the user as inserted a value
 const confirmEntry = (id, entry) => {
   if (id) {
     return true;
@@ -6,6 +7,7 @@ const confirmEntry = (id, entry) => {
   }
 };
 
+//Confirm the user only inserted letters
 const confirmLettersOnly = (id) => {
   const letters = /^[ a-zA-ZÀ-ÿ\u00f1\u00d1 ']*$/g.test(id);
   if (letters === false || letters == "") {
@@ -14,6 +16,7 @@ const confirmLettersOnly = (id) => {
   return true;
 };
 
+//Confirm the user iserted a valid form of email
 const confirmEmail = (email) => {
   const validEmail =
     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
@@ -25,6 +28,7 @@ const confirmEmail = (email) => {
   return true;
 };
 
+//Confirm the user only inserted numbers
 const confirmNumber = (number) => {
   if (isNaN(number) || number == "") {
     return "please enter a number";
@@ -32,6 +36,7 @@ const confirmNumber = (number) => {
   return true;
 };
 
+//Main menu questions
 const MainMenuQuestions = [
   {
     type: "list",
@@ -46,6 +51,7 @@ const MainMenuQuestions = [
   },
 ];
 
+//Manager Questions
 const ManagerQuestions = [
   {
     type: "input",
@@ -73,6 +79,7 @@ const ManagerQuestions = [
   },
 ];
 
+//Engineer Questions
 const EngineerQuestions = [
   {
     type: "input",
@@ -100,6 +107,7 @@ const EngineerQuestions = [
   },
 ];
 
+//Intern Questions
 const InternQuestions = [
   {
     type: "input",
@@ -127,6 +135,7 @@ const InternQuestions = [
   },
 ];
 
+//Export Questions
 module.exports = {
   MainMenuQuestions,
   ManagerQuestions,
