@@ -6,20 +6,27 @@ const confirmEntry = (id, entry) => {
   }
 };
 
+const confirmLettersOnly = (id) => {
+  const letters = /^[ a-zA-ZÀ-ÿ\u00f1\u00d1 ']*$/g.test(id);
+  if (letters === false || letters == "") {
+    return `Please provide a valid name`;
+  }
+  return true;
+};
+
 const confirmEmail = (email) => {
   const validEmail =
     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
       email
     );
-  if (validEmail === true) {
-    return true;
-  } else {
+  if (validEmail === false || validEmail == "") {
     return "Please provide a valid email";
   }
+  return true;
 };
 
 const confirmNumber = (number) => {
-  if (isNaN(number)) {
+  if (isNaN(number) || number == "") {
     return "please enter a number";
   }
   return true;
@@ -50,7 +57,7 @@ const ManagerQuestions = [
     type: "input",
     message: "What is the Manager's name? ",
     name: "name",
-    validate: (answer) => confirmEntry(answer, "name"),
+    validate: (answer) => confirmLettersOnly(answer),
   },
   {
     type: "input",
@@ -59,7 +66,7 @@ const ManagerQuestions = [
     validate: (answer) => confirmEmail(answer),
   },
   {
-    type: "number",
+    type: "input",
     message: "Enter the office's number: ",
     name: "officeNumber",
     validate: (answer) => confirmNumber(answer),
@@ -77,7 +84,7 @@ const EngineerQuestions = [
     type: "input",
     message: "What is the Engineer's name?",
     name: "name",
-    validate: (answer) => confirmEntry(answer, "name"),
+    validate: (answer) => confirmLettersOnly(answer),
   },
   {
     type: "input",
@@ -95,7 +102,7 @@ const EngineerQuestions = [
 
 const InternQuestions = [
   {
-    type: "number",
+    type: "input",
     message: "What is the Intern's ID",
     name: "id",
     validate: (answer) => confirmNumber(answer),
@@ -104,7 +111,7 @@ const InternQuestions = [
     type: "input",
     message: "What is the Intern's name?",
     name: "name",
-    validate: (answer) => confirmEntry(answer, "name"),
+    validate: (answer) => confirmLettersOnly(answer),
   },
   {
     type: "input",

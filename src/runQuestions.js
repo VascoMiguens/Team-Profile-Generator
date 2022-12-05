@@ -52,6 +52,7 @@ const runMenuQuestions = async () => {
 const runManagerQuestions = async () => {
   await inquirer.prompt(questions.ManagerQuestions).then((response) => {
     //Create a new Manager Object
+
     const manager = new Manager(
       response.id,
       response.name,
@@ -64,7 +65,6 @@ const runManagerQuestions = async () => {
 
     //Show the Menu questions Again
     runMenuQuestions();
-    console.log(manager);
   });
 };
 
