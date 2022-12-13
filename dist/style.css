@@ -1,0 +1,58 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, blue, purple);
+}
+
+.team {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.manager,
+.engineer,
+.intern {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+h2,
+h3,
+p {
+  padding-left: 10px;
+}
+
+.card-header {
+  width: 100;
+  background-color: rgb(30, 144, 255);
+}
+
+.card-body {
+  background-color: rgb(240, 240, 240);
+  padding: 10px;
+}
+
+.card-body p {
+  margin: 0;
+  border: 1px solid rgb(0, 0, 0, 0.2);
+  background-color: white;
+}
